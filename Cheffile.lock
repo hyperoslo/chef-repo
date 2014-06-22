@@ -5,7 +5,8 @@ SITE
     aws (2.2.2)
     bluepill (2.3.1)
       rsyslog (>= 0.0.0)
-    build-essential (2.0.2)
+    build-essential (2.0.4)
+    chef-sugar (2.0.0)
     chef_handler (1.1.6)
     database (2.2.0)
       aws (>= 0.0.0)
@@ -21,7 +22,7 @@ SITE
       windows (>= 0.0.0)
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
-    logrotate (1.5.0)
+    logrotate (1.6.0)
     mysql (5.2.12)
     mysql-chef_gem (0.0.2)
       build-essential (>= 0.0.0)
@@ -33,9 +34,13 @@ SITE
       ohai (~> 2.0)
       runit (~> 1.2)
       yum-epel (~> 0.3)
-    ohai (2.0.0)
-    openssl (1.1.0)
-    postfix (3.2.0)
+    ohai (2.0.1)
+    openssl (2.0.0)
+      chef-sugar (>= 0.0.0)
+    postgresql (3.4.0)
+      apt (>= 1.9.0)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
     rbenv (1.7.1)
       apt (>= 0.0.0)
       build-essential (>= 0.0.0)
@@ -51,19 +56,9 @@ SITE
     windows (1.31.0)
       chef_handler (>= 0.0.0)
     xfs (1.1.0)
-    yum (3.2.0)
+    yum (3.2.2)
     yum-epel (0.3.6)
       yum (~> 3.0)
-
-GIT
-  remote: https://github.com/intercity/cookbooks-postgresql
-  ref: ubuntu-1404
-  sha: 7f28ca9dad8de27558bdafdbcc6a58ac85cca99e
-  specs:
-    postgresql (3.4.0)
-      apt (>= 1.9.0)
-      build-essential (>= 0.0.0)
-      openssl (>= 0.0.0)
 
 PATH
   remote: vendor/cookbooks/packages
@@ -81,20 +76,25 @@ PATH
       sudo (> 1.2.0)
 
 PATH
+  remote: vendor/cookbooks/ruby
+  specs:
+    ruby (0.1.0)
+
+PATH
   remote: vendor/cookbooks/ssh_deploy_keys
   specs:
     ssh_deploy_keys (0.1.0)
 
 DEPENDENCIES
-  apt (= 2.4.0)
   mysql (= 5.2.12)
   nginx (= 2.7.2)
   packages (>= 0)
-  postfix (= 3.2.0)
-  postgresql (>= 0)
+  postgresql (= 3.4.0)
   rails (>= 0)
   rbenv (= 1.7.1)
+  ruby (>= 0)
   ruby_build (= 0.8.0)
   ssh_deploy_keys (>= 0)
   sudo (= 2.6.0)
+  yum (= 3.2.2)
 
