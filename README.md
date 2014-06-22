@@ -14,17 +14,18 @@ from [37signals](http://37signals.com) and the
 Takes care of automatic installation and configuration of the following software
 on a single server or multiple servers:
 
-* nginx webserver
-* Passenger or Unicorn for running Ruby on Rails
+* Nginx webserver
+* Unicorn for running Ruby on Rails
 * Multiple apps on one server
 * Database creation and password generation
 * Easy SSL configuration
 * Deployment with Capistrano
 
-## Supported Ubuntu versions
+## Supported CentOS versions
 
-* Ubuntu 12.04 LTS
-* Ubuntu 14.04 LTS
+* CentOS 6.5
+
+If you are using Ubuntu, please checkout this repo: https://github.com/intercity/chef-repo
 
 ## Supported databases
 
