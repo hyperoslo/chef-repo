@@ -103,5 +103,6 @@ DEPENDENCIES
   ruby (>= 0)
   ruby_build (= 0.8.0)
   ssh_deploy_keys (>= 0)
+  sudo (= 2.6.0)
   yum (= 3.2.2)
 

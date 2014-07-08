@@ -5,6 +5,7 @@ cookbook "yum", "3.2.2"
 cookbook "mysql", "5.2.12"
 cookbook "postgresql", "3.4.0"
 cookbook "nginx", "2.7.2"
+cookbook "sudo", "2.6.0"
 cookbook "rbenv", "1.7.1"
 cookbook "ruby_build", "0.8.0"
 
