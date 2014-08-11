@@ -1,4 +1,4 @@
-site "http://community.opscode.com/api/v1"
+site "https://supermarket.getchef.com/api/v1"
 
 # Community cookbooks
 cookbook "yum", "3.2.2"
@@ -8,6 +8,8 @@ cookbook "nginx", "2.7.2"
 cookbook "sudo", "2.6.0"
 cookbook "rbenv", "1.7.1"
 cookbook "ruby_build", "0.8.0"
+cookbook 'java', '~> 1.25.0'
+cookbook 'elasticsearch', '~> 0.3.10'
 
 # Our own cookbooks from vendor/
 cookbook "libyaml", path: "vendor/cookbooks/libyaml"
